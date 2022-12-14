@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Controls</title>
+    <script src="form.js"></script>
+</head>
+<body onlaod = "initialize();">
+    <h1 id = "greeting"></h1>
+    <form id = "inputform">
+        First Name: <input name = "fname" type = "text"/>
+        Last Name: <input name = "lname" type = "text" />
+        <label>
+            <input name = "pizza" type = "checkbox" /> Check here if you like to eat pizza.
+        </label>
+
+        <hr /><hr />
+
+        Where are you from?
+        <label>
+            <input type = "radio" name = "origin" value = "Earth" />
+            Earth
+        </label>
+        <label>
+            <input type = "radio" name = "origin" value = "The Moon" />
+            The Moon
+        </label>
+        <label>
+            <input type = "radio" name = "origin" value = "Mars" />
+            Mars
+        </label>
+    </form>
+    <hr />
+    <button onlick = "recordData();">Click Here When Done</button>
+</body>
+</html>
